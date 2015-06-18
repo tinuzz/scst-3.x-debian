@@ -2,7 +2,7 @@
 Debian packaging for SCST
 
 This is an unofficial repository containing Debian packaging for SCST 3.0.x.
-The work was originally done by Fajar A. Nugraha <ubuntu-ppa@fajar.net> for
+The work was originally done by Fajar A. Nugraha &lt;ubuntu-ppa@fajar.net&gt; for
 the packages that can be found in this Launchpad PPA, that serves SCST
 packages for Ubuntu Precise, Trusty and Utopic:
 
@@ -18,11 +18,13 @@ The quick'n'dirty howto for this repo is this:
 * dpkg-buildpackage / pdebuild / ...
 
 Get the source code here:
+
 http://sourceforge.net/p/scst/svn/HEAD/tree/branches/3.0.x/
 https://github.com/bvanassche/scst/tree/svn-3.0.x
 
 The packaging and the resulting packages HAVE NOT BEEN THOROUGHLY TESTED.
-Use them at your own risk.
+Use them at your own risk. The contents of this repository on every
+tagged commit /should/ at least produce a clean build with pbuilder.
 
 If your build fails, you can try this before starting your build tool:
 
