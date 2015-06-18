@@ -20,8 +20,8 @@ The quick'n'dirty howto for this repo is this:
 
 Get the source code here:
 
-http://sourceforge.net/p/scst/svn/HEAD/tree/branches/3.0.x/
-https://github.com/bvanassche/scst/tree/svn-3.0.x
+* http://sourceforge.net/p/scst/svn/HEAD/tree/branches/3.0.x/
+* https://github.com/bvanassche/scst/tree/svn-3.0.x
 
 The packaging and the resulting packages HAVE NOT BEEN THOROUGHLY TESTED.
 Use them at your own risk. The contents of this repository on every
