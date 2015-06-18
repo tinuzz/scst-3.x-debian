@@ -2,8 +2,9 @@
 Debian packaging for SCST
 
 This is an unofficial repository containing Debian packaging for SCST 3.0.x.
-The work was originally done by Fajar A. Nugraha &lt;ubuntu-ppa@fajar.net&gt; for
-the packages that can be found in this Launchpad PPA, that serves SCST
+The work was originally done by Fajar A. Nugraha &lt;ubuntu-ppa at fajar dot
+net&gt; and I think Adrian Stachowski &lt;ast at marum dot de&gt; before that,
+for the packages that can be found in this Launchpad PPA, that serves SCST
 packages for Ubuntu Precise, Trusty and Utopic:
 
 https://launchpad.net/~scst/+archive/ubuntu/3.0.x/+packages
