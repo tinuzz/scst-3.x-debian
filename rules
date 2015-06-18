@@ -85,7 +85,7 @@ build:
 	sed -i "s/-DCONFIG_SCST_DEBUG //g" `find . -name Makefile`
 	$(MAKE) -C scstadmin
 	$(MAKE) -C iscsi-scst include/iscsi_scst_itf_ver.h
-	$(MAKE) -C iscsi-scst/usr
+	$(MAKE) -C iscsi-scst/usr SCST_INC_DIR=$(PWD)/scst/include
 	sed -i "s|/usr/local/|/usr/|g" usr/fileio/Makefile
 	$(MAKE) -C usr/fileio
 

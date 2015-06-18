@@ -2,6 +2,7 @@ scst (3.0.1-0~tzz1) jessie; urgency=high
 
   * Updated to svn6135 (v3.0.x), should be 3.0.1 release
   * Update DKMS_VERSION / DKMSMODVER variables in various files
+  * Fix FTBFS for iscsi-scst by passing SCST_INC_DIR in debian/rules
   * Built for Debian Jessie
 
  -- Martijn Grendelman <m@rtijn.net>  Wed, 17 Jun 2015 12:59:40 +0200
