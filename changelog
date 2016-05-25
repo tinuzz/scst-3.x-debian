@@ -1,3 +1,9 @@
+scst (3.0.1-0~tzz2) jessie; urgency=high
+
+  * Added missing dkms build of isert-scst (PR#1, thanks to Damien Degois)
+
+ -- Martijn Grendelman <m@rtijn.net>  Wed, 25 May 2016 11:31:04 +0200
+
 scst (3.0.1-0~tzz1) jessie; urgency=high
 
   * Updated to svn6135 (v3.0.x), should be 3.0.1 release
