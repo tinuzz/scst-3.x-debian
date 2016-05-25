@@ -1,7 +1,7 @@
-# scst-3.0.x-debian
+# scst-3.x-debian
 Debian packaging for SCST
 
-This is an unofficial repository containing Debian packaging for SCST 3.0.x.
+This is an unofficial repository containing Debian packaging for SCST 3.x.
 The work was originally done by Fajar A. Nugraha &lt;ubuntu-ppa at fajar dot
 net&gt; and I think Adrian Stachowski &lt;ast at marum dot de&gt; before that,
 for the packages that can be found in this Launchpad PPA, that serves SCST
@@ -20,8 +20,12 @@ The quick'n'dirty howto for this repo is this:
 
 Get the source code here:
 
-* http://sourceforge.net/p/scst/svn/HEAD/tree/branches/3.0.x/
-* https://github.com/bvanassche/scst/tree/svn-3.0.x
+* http://sourceforge.net/p/scst/svn/HEAD/tree/branches/3.1.x/
+* https://github.com/bvanassche/scst/tree/svn-3.1.x
+
+Use this command to check out a tested revision from Subversion:
+
+  svn checkout svn://svn.code.sf.net/p/scst/svn/branches/3.1.x/@6796 scst-3.1.0
 
 The packaging and the resulting packages HAVE NOT BEEN THOROUGHLY TESTED.
 Use them at your own risk. The contents of this repository on every

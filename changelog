@@ -1,3 +1,14 @@
+scst (3.1.0-0isaac2) jessie; urgency=high
+
+  * New upstream release, svn revision 3.1.x/@6796
+  * Set DKMSMODVER to 3.1.0.1. The last digit is just an increasing build-id.
+  * Add a patch to create scst/include/scst_itf_ver.h, preventing FTBFS
+  * Drop prefix-usr.diff from debian/patches
+  * Make build target depend on patch in debian/rules
+  * Set compat level to 9
+
+ -- Martijn Grendelman <m@rtijn.net>  Tue, 17 May 2016 17:39:37 +0200
+
 scst (3.0.1-0~tzz2) jessie; urgency=high
 
   * Added missing dkms build of isert-scst (PR#1, thanks to Damien Degois)

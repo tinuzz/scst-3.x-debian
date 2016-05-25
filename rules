@@ -3,7 +3,7 @@
 export DH_VERBOSE=1
 
 # Need to update this manually for now
-DKMSMODVER=3.0.1
+DKMSMODVER=3.1.0.1
 
 SHELL=/bin/bash
 TMPROOT=$(CURDIR)/debian/tmp
@@ -48,9 +48,15 @@ install: build
 	# hacks
 	# remove uneeded perl files
 	rm -rf $(TMPROOT)/usr/lib/perl
+	rm -rf $(TMPROOT)/usr/local/lib
 	# fix incorrect man location
 	mkdir -p $(TMPROOT)/usr/share/man
-	mv -f $(TMPROOT)/usr/man/* $(TMPROOT)/usr/share/man
+	mv -f $(TMPROOT)/usr/local/man/* $(TMPROOT)/usr/share/man
+	# binaries
+	mkdir -p $(TMPROOT)/usr/sbin
+	mv -f $(TMPROOT)/usr/local/sbin/scstadmin $(TMPROOT)/usr/sbin
+	# perl
+	mv -f $(TMPROOT)/usr/local/share/perl $(TMPROOT)/usr/share
 	# need manual install for iscsi-scst/usr for  now
 	install -vD -m 755 iscsi-scst/usr/iscsi-scstd $(DESTDIR)$(SBINDIR)/iscsi-scstd
 	install -vD -m 644 iscsi-scst/doc/manpages/iscsi-scstd.conf.5 $(DESTDIR)$(MANDIR)/man5/iscsi-scstd.conf.5
@@ -81,7 +87,7 @@ install: build
 	dh_installman
 	dh_install --sourcedir=$(TMPROOT)
 
-build:
+build: patch
 	sed -i "s/-DCONFIG_SCST_DEBUG //g" `find . -name Makefile`
 	$(MAKE) -C scstadmin
 	$(MAKE) -C iscsi-scst include/iscsi_scst_itf_ver.h
